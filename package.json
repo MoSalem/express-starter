@@ -1,0 +1,21 @@
+{
+  "name": "rest-barebone",
+  "version": "0.9.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": " nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mo Salem",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.13.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "eslint": "^7.30.0",
+    "nodemon": "^2.0.9"
+  }
+}
