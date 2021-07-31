@@ -1,7 +1,11 @@
 const router = require('express').Router()
 const User = require('../models/User')
+const { ObjectId: { isValid } } = require('mongodb')
 
 async function getUser({ params: { id } }, res, next) {
+  if ( !isValid(id) ) {
+    return res.status(400).json({ message: `${id} is not a valid ObjectID` }) 
+  } 
 
   let user
   try {
